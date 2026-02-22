@@ -2,42 +2,70 @@
 <html>
 <head>
     <title>Halaman Lukas Indra</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        .left { text-align: left; }
+        .center { text-align: center; }
+        .right { text-align: right; }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- HEADER -->
-    <h1 align="center">Halo, Aku Lukas Indra 👋</h1>
-    <h3 align="center">Mahasiswa | Suka Fotografi | Lagi Belajar Web</h3>
+    <h1>Halo, Aku Lukas Indra 👋</h1>
+    <h3>Mahasiswa Informatika | Suka Fotografi | Lagi Belajar Web</h3>
     <hr>
 
     <!-- PARAGRAPH -->
     <h2>Cerita Singkat Tentang Aku</h2>
 
-    <p align="left">
-        Aku adalah mahasiswa yang baru mendalami <b>pemrograman</b>.
+    <p class="left">
+        Aku adalah mahasiswa yang sedang mendalami <b>pemrograman</b>.
         Walaupun kadang bikin pusing, tapi tetap seru 😄.
     </p>
 
-    <p align="center">
+    <p class="center">
         Selain ngoding, aku juga suka <i>fotografi</i>.
-        Beberapa kali ikut kegiatan foto dan itu jadi pengalaman yang
-        <u>berkesan banget</u> buat aku.
+        Beberapa hasil jepretanku jadi pengalaman yang
+        <u>berkesan banget</u>.
     </p>
 
-    <p align="right">
+    <p class="right">
         Buatku, belajar itu penting, apalagi di dunia teknologi yang
-        terus berkembang dengan <font color="blue">cepat banget</font>.
-    </p>
-
-    <hr>
-
-    <!-- FORMAT TEXT -->
-    <h2>Contoh Formatting Teks</h2>
-    <p>
-        Ini contoh <b>bold</b> <br>
-        Ini contoh <i>italic</i> <br>
-        Ini contoh <u>underline</u> <br>
-        Ini contoh <font color="red">teks berwarna</font>
+        terus berkembang dengan 
+        <span style="color:blue;">cepat banget</span>.
     </p>
 
     <hr>
@@ -56,22 +84,28 @@
     <ol>
         <li>Bangun pagi</li>
         <li>Kuliah</li>
-        <li>Nugas</li>
+        <li>Mengerjakan tugas</li>
         <li>Istirahat</li>
     </ol>
 
     <hr>
 
     <!-- IMAGE -->
-    <h2>Gambaran Hobi Fotografi</h2>
-    <img src="https://via.placeholder.com/200" alt="Foto Hobi">
+    <h2>Hasil Fotografi Malam Hari</h2>
+
+    <img src="Lukas_Dream.jpg" alt="Fotografi malam oleh Lukas" width="350">
+
+    <p class="center">
+        <i>"Lukas Dream" – suasana malam dengan perpaduan cahaya hangat dan dingin yang menciptakan ketenangan.</i>
+    </p>
 
     <hr>
 
     <!-- HYPERLINK -->
     <h2>Link Penting</h2>
+
     <p>
-        Ini GitHub aku:
+        GitHub:
         <a href="https://github.com/Lukasindra" target="_blank">
             github.com/Lukasindra
         </a>
@@ -95,7 +129,8 @@
 
     <!-- TABLE -->
     <h2>Jadwal Kuliah</h2>
-    <table border="1">
+
+    <table>
         <tr>
             <th>Hari</th>
             <th>Mata Kuliah</th>
@@ -113,19 +148,25 @@
     <hr>
 
     <!-- FORM -->
-    <h2>Form Kontak (Boleh Isi ya)</h2>
+    <h2>Form Kontak</h2>
+
     <form>
-        Nama: <input type="text"><br><br>
-        Email: <input type="email"><br><br>
+        Nama:<br>
+        <input type="text"><br><br>
+
+        Email:<br>
+        <input type="email"><br><br>
+
         Pesan:<br>
         <textarea rows="4" cols="30"></textarea><br><br>
+
         <input type="submit" value="Kirim">
     </form>
 
     <hr>
 
-    <footer align="center">
-        <p>&copy; 2026 Lukas Indra</p>
+    <footer>
+        <p>&copy; 2026 Lukas Indra Christiawan</p>
     </footer>
 
 </body>
